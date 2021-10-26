@@ -13,7 +13,7 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class AppUserService implements UserDetailsService {
 	
-	private final AppUserRepository appUserRepository = null;
+	private AppUserRepository appUserRepository;
 	
 	private final static String USER_NOT_FOUND_MSG = "User with Email: %s not found";
 	
